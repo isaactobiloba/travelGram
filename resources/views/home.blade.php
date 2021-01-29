@@ -14,9 +14,12 @@
                     <div class="pr-4"><strong>10k</strong> followers</div>
                     <div class="pr-4"><strong>50</strong> following</div>
                 </div>
-                <div class="pt-4 font-weight-bold">travelgram.universe</div>
-                <div>A community that supports millions of people exploring the world through their lenses. Reach out to us for Funding.</div>
-                <div><a href="#">www.travelgram.universe</a></div>
+                <!-- <div class="pt-4 font-weight-bold">travelgram.universe</div> -->
+                <div class="pt-4 font-weight-bold">{{ $user->profile->title }}</div>
+                <!-- <div>A community that supports millions of people exploring the world through their lenses. Reach out to us for Funding.</div> -->
+                <div>{{ $user->profile->description }}</div>
+                <!-- <div><a href="#">www.travelgram.universe</a></div> -->
+                <div><a href="#">{{ $user->profile->url }}</a></div>
             </div>
         </div>
         <div class="row pt-5">
